@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import 'variables';
+
+
+.effective {
+    text-align: center;
+    margin: 50px 0 0 0;
+    padding: 50px 0 100px 0;
+
+    &-title {
+        font-size: 47px;
+        font-weight: 900;
+        padding: 25px 145px;
+
+        & span {
+            color: $orang;
+        }
+    }
+
+    &-subtitle {
+        font-size: 23px;
+        color: #444444;
+
+    }
+
+    &-list {
+        margin: 90px 0 30px;
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            max-width: 370px;
+            border: 4px solid $orang;
+            border-radius: 5px;
+            box-sizing: border-box;
+
+            &-img {
+                border-radius: 50%;
+                background: #ffffff;
+                border: 4px solid $orang;
+                height: 100px;
+                width: 100px;
+                margin: 0 auto;
+                position: relative;
+                top: -60px;
+
+                & img {
+                    position: relative;
+                    z-index: 1;
+                    top: -54px;
+                }
+
+                & .img-plase {
+                    width: 90%;
+                }
+            }
+
+            .wrap {
+                width: 147px;
+                height: 68px;
+                position: relative;
+                background: #ffffff;
+                top: -16px;
+                left: -19px;
+                z-index: 0;
+            }
+
+            &-title {
+                font-size: 24px;
+                font-weight: 900;
+                margin-top: -30px;
+            }
+
+            &-text {
+                font-size: 18px;
+                color: #444444;
+                padding: 15px 25px 30px;
+                line-height: 1.3;
+
+
+            }
+        }
+    }
+
+    .grsd-wrap {
+        background-image: linear-gradient(to left, #a7c93d 26%, #ff6b00 90%);
+        height: 100px;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+    &-footer {
+        font-size: 27px;
+        padding: 26px 8px;
+        font-weight: 500;
+        position: relative;
+        background: #ffffff;
+        margin: 4px 4px;
+        box-sizing: border-box;
+        height: 90px;
+        top: 5px;
+        border-radius: 16px;
+    }
+
+    & span {
+        color: $orang;
+    }
+}
+
+.green-border {
+    border: 4px solid $green;
+}
+
+@media screen and (max-width:#{(768px)}) {
+    .effective span {
+        padding: 0 100px;
+    }
+
+    .effective-subtitle {
+        padding: 0 80px;
+        line-height: 1.3;
+    }
+
+    .effective-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+
+        &-item {
+            margin-top: 75px;
+        }
+    }
+
+    .green-border {
+        order: -1;
+    }
+}
+
+@media screen and (max-width:#{(425px)}) {
+    .effective {
+        padding: 0 0 20px 0;
+    }
+
+    .effective-title {
+        padding: 25px 3px;
+    }
+
+    .effective-footer {
+        padding: 11px 0px;
+        font-size: 22px;
+    }
+}
